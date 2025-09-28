@@ -1,0 +1,711 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img,
+picture {
+    width: 100%;
+}
+
+section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 40px 20px;
+    scroll-margin-top: 60px;
+    line-height: 1.6;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+a:visited {
+    color: black;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+a:link {
+    color: black;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #F9CF04;
+    cursor: cell;
+}
+
+.dot {
+    color: #F9CF04;
+}
+
+body {
+    font-family: "Instrument Sans", sans-serif;
+    font-size: 16px;
+}
+
+h1 { 
+    text-align: center;
+    font-family: "Poppins", serif;
+    font-size: 35px;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    line-height: 1.3;
+}
+
+h2 { 
+    font-family: "Poppins", serif;
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    margin-top: 0;
+    line-height: 1.3;
+}
+
+h3 {
+    text-align: center;
+    font-family: "DM Serif Display", serif;
+    font-size:36px;
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+
+#purpose-1 { 
+    margin-bottom: 0px;
+}
+
+#purpose { 
+    padding-top: 0px;
+    margin-top: 0px;
+}
+
+header {
+    background-color: #ffffff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content:space-evenly;
+    color: black;
+}
+
+.logo {
+    max-width: 45px;
+    width: auto;
+    margin: 10px 0;
+}
+
+.menu {
+    /* Hidden on mobile */
+    display: none;
+}
+
+.menu a {
+    color:black;
+    text-decoration: none;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.menu a:hover {
+    color:#F9CF04;
+}
+
+.burger-menu {
+    font-size: 2rem;
+    cursor: cell;
+    position: relative;
+    top: -4px;
+    /* Display on mobile */
+    display: block;
+}
+
+#mobile-menu {
+    background-color: white;
+    border: 2px solid #F9CF04;
+    border-radius: 5%;
+    padding: 10px;
+    transform: translateY(5px);
+    top: 0;
+    right:0;
+    position: absolute;
+    top: 65px;
+    width: 30%;
+    z-index:1;
+    display: none;
+    text-align: center;
+}
+
+#mobile-menu a {
+    display: block;
+    color: black;
+    padding: 10px;
+    font-weight: bold;
+}
+
+#mobile-menu a:hover {
+    color: #F9CF04;
+}
+
+.flag {
+    width: 30px;
+}
+
+.flag:hover {
+    transform: scale(1.25);
+}
+
+.social-links {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+}
+
+.social-links img {
+    height: 15px;
+    transition: transform 0.3s;
+}
+
+.social-links img:hover {
+    transform: scale(1.25);
+}
+
+/* Service section */
+#services {
+    padding-bottom: 10px;
+}
+
+.services-text {
+    display: flex;
+    justify-self: center;
+    align-items: center;
+    flex-direction: column;
+    max-width: 700px;
+    margin-left: 20px;
+    margin-right: 20px;
+    text-align: center;
+}
+
+#services-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    padding: 50px 20px;
+    margin: 0 auto;
+    max-width: 900px;
+}
+
+.service-card {
+    background: #fff;
+    border: 2px solid #F9CF04;
+    border-radius: 16px;
+    padding: 20px 10px;
+    text-align: center;
+    transition: transform 0.3s ease;
+    height: fit-content;
+    width: auto;
+}
+
+.services-button {
+    display: none;
+    background-color: white;
+    border: 2px solid #F9CF04;
+    border-radius: 16px;
+    padding:10px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.services-button:hover{
+    color: black;
+    text-decoration: underline;
+}
+
+/*Why section*/
+#why { 
+    flex-wrap: wrap;
+    justify-content:space-evenly;
+    align-items: center;
+    background-color: #fafafa;
+    gap: 2rem;
+    min-height: 100vh;
+}
+
+.why-text {
+    justify-self: center;
+    align-items: center;
+    flex-direction: column;
+    max-width: 650px;
+    margin-left: 20px;
+    margin-right: 20px;
+    text-align: justify;
+}
+
+.why-box {
+    border: 2px solid #F9CF04;
+    padding-bottom: 30px;
+    border-radius: 16px;
+    text-align: center;
+    margin: 0 20px;
+}
+
+.why-box p {
+    font-size: 17px;
+    margin: 8px 0;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+/*Contact section*/
+#contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    min-height: 90vh;
+}
+
+.contact-us h2 {
+    margin-bottom: 50px;
+}
+
+#help {
+    margin-bottom: 50px;
+}
+
+.form-group {
+    flex-direction: column;
+}
+
+.form-group p {
+    padding-bottom: 10px;
+}
+
+.form-group input {
+    border: none;
+    border-bottom: 1px solid #000;
+    background: transparent;
+    font-size: 14px;
+    font-style: italic;
+    padding-top: 0.2rem;
+    padding-bottom: 0.2rem;
+    text-align:left;
+    outline: none;
+    width: 165px;
+    display: flex;
+}
+
+.form-group input:focus {
+    border-bottom: 2px solid #F9CF04;
+}
+
+.form-group input:hover {
+    border-bottom: 1px solid #F9CF04;
+    cursor: text;
+}
+
+.form-group input::placeholder {
+    color: #6c6c6c;
+    font-weight: 400;
+}
+
+.form-submit {
+    border: none;
+    background-color: transparent;
+    padding: 1rem;
+}
+
+.form-submit img{
+    height: 20px;
+}
+
+.form-submit img:hover {
+    transform: scale(1.25);
+}
+
+button#free-call{
+    background-color: white;
+    border: 2px solid #F9CF04;
+    border-radius: 16px;
+    padding:10px;
+    text-align: center;
+    font-size: 16px;
+    margin-top: 40px;
+}
+
+button#free-call a:hover{
+    color: black;
+    text-decoration: underline;
+}
+
+/* Footer */
+footer {
+    background-color: #F9CF04;
+    color: #000000;
+    padding: 10px;
+    font-size: small;
+    align-items: center;
+    text-align: center;
+}
+
+footer p {
+    margin-bottom: 0;
+}
+
+/* Cookie banner */
+.cookie-banner {
+    position: fixed;
+    bottom: 0;
+    background-color: #333;
+    color: white;
+    width: 100%;
+    padding: 10px;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+.cookie-banner p {
+    margin: 10px 10px;
+    font-size: 16px;
+    text-align: justify;
+}
+
+.cookie-banner #learn-more {
+    color: white;
+    text-decoration: underline;
+}
+
+.cookie-banner #learn-more:hover {
+    color: #F9CF04;
+}
+
+.cookie-banner button {
+    text-wrap: nowrap;
+    padding: 10px 10px;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+    border-radius: 5px;
+}
+
+.buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 0 10px;
+}
+
+#accept-all {
+    padding: 10px 13px;
+    background-color: #F9CF04;
+    color: black;
+}
+
+#accept-all:hover {
+    color: white;
+}
+
+#customise {
+    background-color: transparent;
+    color: white;
+    border: 1px solid #ccc;
+}
+
+#customise:hover {
+    color: #F9CF04;
+}
+
+#preference-modal {
+    position:fixed;
+    top: 0;
+    left: 5%;
+    transform: translateY(250px);
+    width: 90%;
+    height: 50vh;
+    background-color: white;
+    border: 2px solid #F9CF04;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items:center;
+    padding: 20px;
+    z-index: 10000; /* Ensure modal is on top */
+    display: none;
+    font-size: 16px;
+}
+
+#preference-modal h2 {
+    margin-bottom: 30px;
+    font-size: 18px;
+}
+
+#preference-modal ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#preference-modal li {
+    margin-bottom: 10px;
+}
+
+#preference-modal input[type="checkbox"] {
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+#preference-modal input{
+    float: right;
+    margin-top: 5px;
+    margin-left: 20px;
+}
+
+#preference-modal label span {
+    font-style: italic;
+    color: #aaa;
+}
+
+#preference-modal a {
+    color: black;
+    font-size: 14px;
+    text-decoration: underline;
+}
+
+#preference-modal a:hover {
+    color: #F9CF04;
+    cursor: pointer;
+}
+
+#save-preferences {
+    text-wrap: nowrap;
+    padding: 10px 10px;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+    border-radius: 5px;
+    background-color: transparent;
+    color: black;
+    border: 1px solid #F9CF04;
+    margin-right: 5px;
+}
+
+#save-preferences:hover {
+    color: white;
+}
+
+#preference-accept-all {
+    text-wrap: nowrap;
+    padding: 10px 35px;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+    border-radius: 5px;
+    background-color: #F9CF04;
+    color: black;
+    border: 1px solid #F9CF04;
+}
+
+#preference-accept-all:hover {
+    color: white;
+}
+
+/* Popup Styles */
+.popup.hidden {
+    display: none;
+}
+
+.popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(51, 51, 51, 0.7); /* Same tone as cookie banner */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10000;
+    animation: fadeIn 0.5s ease forwards;
+}
+
+.popup-inner {
+    background-color: white;
+    border: 2px solid #F9CF04;
+    border-radius: 16px;
+    padding: 30px 20px;
+    text-align: center;
+    max-width:fit-content;
+    width: 90%;
+    position: relative;
+    font-family: "Instrument Sans", sans-serif;
+}
+
+.popup-inner img {
+    width: 75%;
+}
+
+h2 { 
+    font-family: "Poppins", serif;
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    line-height: 1.3;
+}
+
+h3 {
+    text-align: center;
+    font-family: "Instrument Sans", sans-serif;
+    font-size:20px;
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+
+p { 
+    margin-bottom: 15px;
+    font-size: 16px;
+}
+
+.popup-inner h2 {
+    font-family: "Poppins", serif;
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.popup-inner p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.popup-inner a {
+    padding: 10px;
+    background-color: #000000;
+    color: #F9CF04;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.popup-inner button:hover {
+    background-color: #F9CF04;
+    color: white;
+    transition: 0.3s;
+}
+
+.popup-close {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+/* Animation */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+} 
+
+  /* Responsive style - desktop */
+@media (min-width: 768px) {
+    .logo {
+    max-width: 70px;
+    }
+
+    .menu {
+    display: block;
+    }
+
+    .language {
+    display: flex;
+    }
+
+    .burger-menu {
+    /* Hidden on tablet and desktop */
+    display: none;
+    }
+
+    .social-links {
+    /* Horizontal layout on larger screens */
+    flex-direction: row;
+    align-items: center;
+    }
+
+    .buttons {
+    display: flex;
+    flex-wrap: nowrap;
+    }
+
+    h1 {
+    font-size: 40px;
+    }
+
+    #preference-modal {
+    width: 40%;
+    left:30%;
+    }
+
+    .category img{
+        width: 200px;
+        margin-top: 20px;
+        margin: 20px;
+        border-radius: 40%;
+    }
+
+    .product-grid {
+        grid-template-columns: auto auto auto;
+        gap: 5px;
+        padding: 20px;
+    }
+
+    .popup-inner {
+        max-width: 400px;
+    }
+
+    button#free-call{
+        font-size: 20px;
+    }
+
+    button#free-call-1{
+        font-size: 20px;
+    }
+
+    .service-card {
+    background: #fff;
+    border: 2px solid #F9CF04;
+    border-radius: 16px;
+    padding: 20px 10px;
+    text-align: center;
+    transition: transform 0.3s ease;
+    height: 180px;
+    width: 400px;
+    } 
+
+    .why-box {
+    width: 650px;
+    border: 2px solid #F9CF04;
+    padding-bottom: 30px;
+    border-radius: 16px;
+    margin-left: 20px;
+    margin-right: 20px;
+    text-align: center;
+    }
+}
