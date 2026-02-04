@@ -272,6 +272,21 @@ header {
 }
 
 /*Contact section*/
+button#free-call{
+    background-color: white;
+    border: 2px solid #F9CF04;
+    border-radius: 16px;
+    padding:10px;
+    text-align: center;
+    font-size: 16px;
+    margin-bottom: 60px;
+}
+
+button#free-call a:hover{
+    color: black;
+    text-decoration: underline;
+}
+
 #contact {
     display: flex;
     flex-direction: column;
@@ -280,11 +295,7 @@ header {
 }
 
 .contact-us h2 {
-    margin-bottom: 50px;
-}
-
-#help {
-    margin-bottom: 50px;
+    margin-bottom: 40px;
 }
 
 .form-group {
@@ -681,11 +692,7 @@ p {
     }
 
     button#free-call{
-        font-size: 20px;
-    }
-
-    button#free-call-1{
-        font-size: 20px;
+        font-size: 16px;
     }
 
     .service-card {
